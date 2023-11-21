@@ -1,0 +1,5 @@
+{
+    "scripts": [
+        "@phasereditor2d/scripts-core"
+    ]
+}

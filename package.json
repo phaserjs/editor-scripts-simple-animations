@@ -1,0 +1,28 @@
+{
+  "name": "@phasereditor2d/scripts-simple-animations",
+  "version": "1.0.0",
+  "description": "Simple animation scripts for Phaser Editor 2D.",
+  "main": "out/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "tsc --watch",
+    "clean": "rm -Rf out/* && rm -Rf types/*",
+    "build": "tsc"
+  },
+  "keywords": [
+    "animations",
+    "scripts",
+    "phasereditor2d",
+    "phaser"
+  ],
+  "author": "Phaser Editor 2D",
+  "license": "MIT",
+  "devDependencies": {
+    "phaser": "^3.70.0",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@phasereditor2d/scripts-core": "^1.0.0-alpha.1"
+  }
+}
