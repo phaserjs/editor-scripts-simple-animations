@@ -42,8 +42,6 @@ export default class MoveInAction extends ScriptNode {
 		let fromX = x;
 		let fromY = y;
 
-		sprite.setPosition(fromX, fromY);
-
 		switch (this.from) {
 
 			case "LEFT":
@@ -65,16 +63,12 @@ export default class MoveInAction extends ScriptNode {
 				break;
 		}
 
+		sprite.setPosition(fromX, fromY);
+
 		this.scene.add.tween({
 			targets: sprite,
-			x: {
-				from: fromX,
-				to: x
-			},
-			y: {
-				from: fromY,
-				to: y
-			},
+			x,
+			y,
 			duration,
 			delay,
 			ease
