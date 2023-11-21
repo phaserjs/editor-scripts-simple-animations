@@ -23,10 +23,11 @@ export default class DurationComp {
 
 	private gameObject: any;
 	public duration: number = 250;
+	public delay: number = 0;
 
 	/* START-USER-CODE */
 
-	static getDuration(obj: any, defaultDuration: number) {
+	static getDuration(obj: any, defaultValue: number) {
 
 		const comp = DurationComp.getComponent(obj);
 
@@ -35,7 +36,19 @@ export default class DurationComp {
 			return comp.duration;
 		}
 
-		return defaultDuration;
+		return defaultValue;
+	}
+
+	static getDelay(obj: any, defaultValue: number) {
+
+		const comp = DurationComp.getComponent(obj);
+
+		if (comp) {
+
+			return comp.delay;
+		}
+
+		return defaultValue;
 	}
 
 	/* END-USER-CODE */

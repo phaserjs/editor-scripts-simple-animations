@@ -5,8 +5,9 @@
 
 import { ScriptNode } from "@phasereditor2d/scripts-core";
 import Phaser from "phaser";
-import DurationComp from "./DurationComp";
 /* START-USER-IMPORTS */
+import DurationComp from "./DurationComp";
+import EaseComp from "./EaseComp";
 /* END-USER-IMPORTS */
 
 export default class MoveInAction extends ScriptNode {
@@ -30,11 +31,11 @@ export default class MoveInAction extends ScriptNode {
 			return;
 		}
 
-		console.log("execute move in action");
-
 		const sprite = this.gameObject as Phaser.GameObjects.Sprite;
 
 		const duration = DurationComp.getDuration(this, 250);
+		const delay = DurationComp.getDelay(this, 0);
+		const ease = EaseComp.getEase(this, "Expo");
 
 		const { x, y } = sprite;
 
@@ -73,7 +74,8 @@ export default class MoveInAction extends ScriptNode {
 				to: y
 			},
 			duration,
-			ease: Phaser.Math.Easing.Expo.Out
+			delay,
+			ease
 		});
 	}
 
