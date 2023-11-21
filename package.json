@@ -1,6 +1,6 @@
 {
   "name": "@phasereditor2d/scripts-simple-animations",
-  "version": "1.0.0-alpha.2",
+  "version": "1.0.0-alpha.3",
   "description": "Simple animation scripts for Phaser Editor 2D.",
   "main": "out/index.js",
   "types": "types/index.d.ts",
