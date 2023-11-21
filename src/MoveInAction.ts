@@ -42,6 +42,8 @@ export default class MoveInAction extends ScriptNode {
 		let fromX = x;
 		let fromY = y;
 
+		sprite.setPosition(fromX, fromY);
+
 		switch (this.from) {
 
 			case "LEFT":
