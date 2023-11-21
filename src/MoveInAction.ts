@@ -59,7 +59,7 @@ export default class MoveInAction extends ScriptNode {
 				break;
 
 			case "BOTTOM":
-				fromY = this.scene.scale.height;
+				fromY = this.scene.scale.height + sprite.displayHeight;
 				break;
 		}
 
