@@ -28,7 +28,7 @@ export default class DurationConfigComp {
 
 	static getDuration(obj: any, defaultValue: number) {
 
-		const comp = DurationComp.getComponent(obj);
+		const comp = DurationConfigComp.getComponent(obj);
 
 		if (comp) {
 

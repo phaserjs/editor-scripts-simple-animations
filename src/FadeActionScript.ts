@@ -6,7 +6,7 @@
 import { ScriptNode } from "@phasereditor2d/scripts-core";
 import Phaser from "phaser";
 /* START-USER-IMPORTS */
-import DurationComp from "./DurationConfigComp";
+import DurationConfigComp from "./DurationConfigComp";
 import EaseComp from "./EaseConfigComp";
 import DelayComp from "./DelayConfigComp";
 /* END-USER-IMPORTS */
@@ -34,7 +34,7 @@ export default class FadeActionScript extends ScriptNode {
 
 		const sprite = this.gameObject as Phaser.GameObjects.Sprite;
 
-		const duration = DurationComp.getDuration(this, 250);
+		const duration = DurationConfigComp.getDuration(this, 250);
 		const delay = DelayComp.getDelay(this, 0);
 		const ease = EaseComp.getEase(this, "Expo");
 

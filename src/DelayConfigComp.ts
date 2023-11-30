@@ -28,7 +28,7 @@ export default class DelayConfigComp {
 
 	static getDelay(obj: any, defaultValue: number) {
 
-		const comp = DelayComp.getComponent(obj);
+		const comp = DelayConfigComp.getComponent(obj);
 
 		if (comp) {
 

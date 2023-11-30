@@ -28,7 +28,7 @@ export default class EaseConfigComp {
 
 	static getEase(obj: any, defaultValue: string) {
 
-		const comp = EaseComp.getComponent(obj);
+		const comp = EaseConfigComp.getComponent(obj);
 
 		if (comp) {
 

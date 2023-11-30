@@ -6,7 +6,7 @@
 import { ScriptNode } from "@phasereditor2d/scripts-core";
 import Phaser from "phaser";
 /* START-USER-IMPORTS */
-import DurationComp from "./DurationConfigComp";
+import DurationConfigComp from "./DurationConfigComp";
 /* END-USER-IMPORTS */
 
 export default class PushActionScript extends ScriptNode {
@@ -38,7 +38,7 @@ export default class PushActionScript extends ScriptNode {
 
 		this._executing = true;
 
-		const duration = DurationComp.getDuration(this, 80);
+		const duration = DurationConfigComp.getDuration(this, 80);
 
 		const { scaleX, scaleY } = this.gameObject as Phaser.GameObjects.Sprite;
 
