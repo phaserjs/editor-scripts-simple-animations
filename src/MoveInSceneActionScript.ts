@@ -6,9 +6,9 @@
 import { ScriptNode } from "@phasereditor2d/scripts-core";
 import Phaser from "phaser";
 /* START-USER-IMPORTS */
-import DurationComp from "./DurationComp";
-import EaseComp from "./EaseComp";
-import DelayComp from "./DelayComp";
+import DurationComp from "./DurationConfigComp";
+import EaseComp from "./EaseConfigComp";
+import DelayComp from "./DelayConfigComp";
 /* END-USER-IMPORTS */
 
 export default class MoveInSceneActionScript extends ScriptNode {

@@ -6,19 +6,19 @@
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class EaseComp {
+export default class EaseConfigComp {
 
 	constructor(gameObject: any) {
 		this.gameObject = gameObject;
-		(gameObject as any)["__EaseComp"] = this;
+		(gameObject as any)["__EaseConfigComp"] = this;
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
 
-	static getComponent(gameObject: any): EaseComp {
-		return (gameObject as any)["__EaseComp"];
+	static getComponent(gameObject: any): EaseConfigComp {
+		return (gameObject as any)["__EaseConfigComp"];
 	}
 
 	private gameObject: any;

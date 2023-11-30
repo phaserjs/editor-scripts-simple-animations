@@ -1,7 +1,8 @@
 {
     "components": [
         {
-            "name": "DurationComp",
+            "name": "DurationConfigComp",
+            "displayName": "Duration Config",
             "baseClass": "",
             "gameObjectType": "any",
             "properties": [
@@ -18,7 +19,8 @@
             ]
         },
         {
-            "name": "EaseComp",
+            "name": "EaseConfigComp",
+            "displayName": "Ease Config",
             "baseClass": "",
             "gameObjectType": "any",
             "properties": [
@@ -84,7 +86,8 @@
             ]
         },
         {
-            "name": "DelayComp",
+            "name": "DelayConfigComp",
+            "displayName": "Delay Config",
             "baseClass": "",
             "gameObjectType": "any",
             "properties": [

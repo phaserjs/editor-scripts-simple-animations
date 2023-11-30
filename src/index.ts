@@ -1,6 +1,6 @@
-export { default as DelayComp } from "./DelayComp";
-export { default as DurationComp } from "./DurationComp";
-export { default as EaseComp } from "./EaseComp";
+export { default as DelayConfigComp } from "./DelayConfigComp";
+export { default as DurationConfigComp } from "./DurationConfigComp";
+export { default as EaseConfigComp } from "./EaseConfigComp";
 export { default as MoveInSceneActionScript } from "./MoveInSceneActionScript";
 export { default as MoveOutSceneActionScript } from "./MoveOutSceneActionScript";
 export { default as PushActionScript } from "./PushActionScript";

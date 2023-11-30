@@ -6,7 +6,7 @@
 import { ScriptNode } from "@phasereditor2d/scripts-core";
 import Phaser from "phaser";
 /* START-USER-IMPORTS */
-import DurationComp from "./DurationComp";
+import DurationComp from "./DurationConfigComp";
 /* END-USER-IMPORTS */
 
 export default class PushActionScript extends ScriptNode {
