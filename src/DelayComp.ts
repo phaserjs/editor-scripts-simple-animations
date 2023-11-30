@@ -6,33 +6,33 @@
 /* START-USER-IMPORTS */
 /* END-USER-IMPORTS */
 
-export default class DurationComp {
+export default class DelayComp {
 
 	constructor(gameObject: any) {
 		this.gameObject = gameObject;
-		(gameObject as any)["__DurationComp"] = this;
+		(gameObject as any)["__DelayComp"] = this;
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
 
-	static getComponent(gameObject: any): DurationComp {
-		return (gameObject as any)["__DurationComp"];
+	static getComponent(gameObject: any): DelayComp {
+		return (gameObject as any)["__DelayComp"];
 	}
 
 	private gameObject: any;
-	public duration: number = 250;
+	public delay: number = 0;
 
 	/* START-USER-CODE */
 
-	static getDuration(obj: any, defaultValue: number) {
+	static getDelay(obj: any, defaultValue: number) {
 
-		const comp = DurationComp.getComponent(obj);
+		const comp = DelayComp.getComponent(obj);
 
 		if (comp) {
 
-			return comp.duration;
+			return comp.delay;
 		}
 
 		return defaultValue;

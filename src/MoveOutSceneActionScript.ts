@@ -8,9 +8,10 @@ import Phaser from "phaser";
 /* START-USER-IMPORTS */
 import DurationComp from "./DurationComp";
 import EaseComp from "./EaseComp";
+import DelayComp from "./DelayComp";
 /* END-USER-IMPORTS */
 
-export default class MoveInAction extends ScriptNode {
+export default class MoveOutSceneActionScript extends ScriptNode {
 
 	constructor(parent: ScriptNode | Phaser.GameObjects.GameObject | Phaser.Scene) {
 		super(parent);
@@ -20,7 +21,7 @@ export default class MoveInAction extends ScriptNode {
 		/* END-USER-CTR-CODE */
 	}
 
-	public from: "LEFT" | "RIGHT" | "TOP" | "BOTTOM" | "NONE" = "NONE";
+	public to: "LEFT"|"RIGHT"|"TOP"|"BOTTOM"|"NONE" = "NONE";
 
 	/* START-USER-CODE */
 
@@ -34,36 +35,33 @@ export default class MoveInAction extends ScriptNode {
 		const sprite = this.gameObject as Phaser.GameObjects.Sprite;
 
 		const duration = DurationComp.getDuration(this, 250);
-		const delay = DurationComp.getDelay(this, 0);
-		const ease = EaseComp.getEase(this, "Expo");
+		const delay = DelayComp.getDelay(this, 0);
+		const ease = EaseComp.getEase(this, "Expo.in");
 
-		const { x, y } = sprite;
+		let { x, y } = sprite;
 
-		let fromX = x;
-		let fromY = y;
-
-		switch (this.from) {
+		switch (this.to) {
 
 			case "LEFT":
 
-				fromX = -sprite.displayWidth;
+				x = -sprite.displayWidth;
 				break;
 
 			case "RIGHT":
 
-				fromX = this.scene.scale.width + sprite.displayWidth;
+				x = this.scene.scale.width + sprite.displayWidth;
 				break;
 
 			case "TOP":
-				fromY = -sprite.displayHeight;
+
+				y = -sprite.displayHeight;
 				break;
 
 			case "BOTTOM":
-				fromY = this.scene.scale.height + sprite.displayHeight;
+
+				y = this.scene.scale.height + sprite.displayHeight;
 				break;
 		}
-
-		sprite.setPosition(fromX, fromY);
 
 		this.scene.add.tween({
 			targets: sprite,
@@ -71,7 +69,11 @@ export default class MoveInAction extends ScriptNode {
 			y,
 			duration,
 			delay,
-			ease
+			ease,
+			onComplete: () => {
+
+				this.executeChildren();
+			}
 		});
 	}
 

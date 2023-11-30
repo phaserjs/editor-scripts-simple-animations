@@ -4,6 +4,8 @@
     "settings": {
         "exportClass": true,
         "autoImport": true,
+        "prefabObjDisplayFmt": "Move to scene from \"${from}\"",
+        "displayName": "Move To Scene Action",
         "preloadMethodName": "",
         "preloadPackFiles": [],
         "createMethodName": "",

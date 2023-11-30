@@ -14,16 +14,6 @@
                     "type": {
                         "id": "number"
                     }
-                },
-                {
-                    "name": "delay",
-                    "label": "Delay",
-                    "tooltip": "",
-                    "defValue": 0,
-                    "customDefinition": false,
-                    "type": {
-                        "id": "number"
-                    }
                 }
             ]
         },
@@ -89,6 +79,23 @@
                             "Back.easeInOut",
                             "Bounce.easeInOut"
                         ]
+                    }
+                }
+            ]
+        },
+        {
+            "name": "DelayComp",
+            "baseClass": "",
+            "gameObjectType": "any",
+            "properties": [
+                {
+                    "name": "delay",
+                    "label": "Delay",
+                    "tooltip": "",
+                    "defValue": 0,
+                    "customDefinition": false,
+                    "type": {
+                        "id": "number"
                     }
                 }
             ]

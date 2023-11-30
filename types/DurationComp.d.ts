@@ -3,7 +3,5 @@ export default class DurationComp {
     static getComponent(gameObject: any): DurationComp;
     private gameObject;
     duration: number;
-    delay: number;
     static getDuration(obj: any, defaultValue: number): number;
-    static getDelay(obj: any, defaultValue: number): number;
 }
