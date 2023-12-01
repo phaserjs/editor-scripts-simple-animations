@@ -8,9 +8,14 @@ The scripts are coded in TypeScript with ES modules.
 
 ## Installing
 
-Install this package in your game:
+This package depends on the following packages:
+
+- `@phasereditor2d/scripts-core`
+
+To install this in your game you have to install dependencies too:
 
 ```
+npm install @phasereditor2d/scripts-core
 npm install @phasereditor2d/scripts-simple-animations
 ```
 
@@ -18,7 +23,10 @@ Also, you should add this package to the `phasereditor2d.config.json` file in yo
 
 ```json
 {
-    "scripts": ["@phasereditor2d/scripts-simple-animations"]
+    "scripts": [
+        "@phasereditor2d/scripts-core",
+        "@phasereditor2d/scripts-simple-animations"
+    ]
 }
 ```
 
