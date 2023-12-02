@@ -41,6 +41,8 @@ export default class FadeActionScript extends ScriptNode {
 		const from = this.fadeDirection === "FadeIn" ? 0 : sprite.alpha;
 		const to = this.fadeDirection === "FadeIn" ? sprite.alpha : 0;
 
+		sprite.alpha = from;
+
 		this.scene.add.tween({
 			targets: sprite,
 			alpha: { from, to },
