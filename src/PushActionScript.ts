@@ -48,13 +48,11 @@ export default class PushActionScript extends ScriptNode {
 			scaleY: scaleY * 0.8,
 			duration,
 			yoyo: true,
-			onYoyo: () => {
-
-				this.executeChildren(args);
-			},
 			onComplete: () => {
 
 				this._executing = false;
+				
+				this.executeChildren(args);
 			}
 		});
 	}
