@@ -7,8 +7,8 @@ import { ScriptNode } from "@phasereditor2d/scripts-core";
 import Phaser from "phaser";
 /* START-USER-IMPORTS */
 import DurationConfigComp from "./DurationConfigComp";
-import EaseComp from "./EaseConfigComp";
-import DelayComp from "./DelayConfigComp";
+import EaseConfigComp from "./EaseConfigComp";
+import DelayConfigComp from "./DelayConfigComp";
 /* END-USER-IMPORTS */
 
 export default class MoveOutSceneActionScript extends ScriptNode {
@@ -35,8 +35,8 @@ export default class MoveOutSceneActionScript extends ScriptNode {
 		const sprite = this.gameObject as Phaser.GameObjects.Sprite;
 
 		const duration = DurationConfigComp.getDuration(this, 250);
-		const delay = DelayComp.getDelay(this, 0);
-		const ease = EaseComp.getEase(this, "Expo.in");
+		const delay = DelayConfigComp.getDelay(this, 0);
+		const ease = EaseConfigComp.getEase(this, "Expo.in");
 
 		let { x, y } = sprite;
 
