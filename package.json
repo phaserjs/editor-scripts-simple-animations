@@ -5,7 +5,7 @@
   "main": "out/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/PhaserEditor2D/phasereditor2d-scripts-simple-animations#duration-config"
+    "url": "https://github.com/PhaserEditor2D/phasereditor2d-scripts-simple-animations"
   },
   "types": "types/index.d.ts",
   "scripts": {
