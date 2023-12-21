@@ -31,19 +31,16 @@ export default class PushActionScript extends ScriptNode {
 			return;
 		}
 
-		if (!this.gameObject) {
-
-			return;
-		}
-
 		this._executing = true;
 
 		const duration = DurationConfigComp.getDuration(this, 80);
 
-		const { scaleX, scaleY } = this.gameObject as Phaser.GameObjects.Sprite;
+		const obj = this.getActionTargetObject(args) as Phaser.GameObjects.Sprite;
+
+		const { scaleX, scaleY } = obj;
 
 		this.scene.add.tween({
-			targets: this.gameObject,
+			targets: obj,
 			scaleX: scaleX * 0.8,
 			scaleY: scaleY * 0.8,
 			duration,
@@ -51,7 +48,7 @@ export default class PushActionScript extends ScriptNode {
 			onComplete: () => {
 
 				this._executing = false;
-				
+
 				this.executeChildren(args);
 			}
 		});

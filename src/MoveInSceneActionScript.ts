@@ -27,12 +27,7 @@ export default class MoveInSceneActionScript extends ScriptNode {
 
 	execute(...args: any[]): void {
 
-		if (!this.gameObject) {
-
-			return;
-		}
-
-		const sprite = this.gameObject as Phaser.GameObjects.Sprite;
+		const sprite = this.getActionTargetObject(args) as Phaser.GameObjects.Sprite;
 
 		const duration = DurationConfigComp.getDuration(this, 250);
 		const delay = DelayConfigComp.getDelay(this, 0);
