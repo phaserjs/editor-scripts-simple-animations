@@ -64,6 +64,8 @@ You can configure the delay, duration, and ease of the animation by adding the *
 
 When the animation completes, the script executes the children's scripts.
 
+This action allows the **Action Target Config** user component.
+
 ## Move To Scene Action (`MoveInSceneActionScript.scene`)
 
 *Class: `MoveInSceneActionScript`*
@@ -73,6 +75,8 @@ This script moves the game object from outside the scene to the current position
 You can configure the delay, duration, and ease of the animation by adding the **Delay Config**, **Duration Config**, and **Ease Config** components to the script.
 
 When the animation completes, the script executes the children's scripts.
+
+This action allows the **Action Target Config** user component.
 
 ## Move Out Scene Action
 
@@ -84,6 +88,8 @@ You can configure the delay, duration, and ease of the animation by adding the *
 
 When the animation completes, the script executes the children's scripts.
 
+This action allows the **Action Target Config** user component.
+
 ## Push Action 
 
 *Class: `PushActionScript`*
@@ -91,6 +97,8 @@ When the animation completes, the script executes the children's scripts.
 This script performs a push-button-like effect on the game object, scaling it down and out, and restoring the initial scale.
 
 You can configure the duration of the animation by adding the **Duration Config** user component.
+
+This action allows the **Action Target Config** user component.
 
 ## Delay Config
 
