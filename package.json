@@ -31,7 +31,7 @@
   "author": "Phaser Editor 2D",
   "license": "MIT",
   "devDependencies": {
-    "@phasereditor2d/scripts-core": "^1.0.14-alpha.0",
+    "@phasereditor2d/scripts-core": "^1.1.0",
     "phaser": "^3.70.0",
     "typescript": "^5.2.2"
   }
