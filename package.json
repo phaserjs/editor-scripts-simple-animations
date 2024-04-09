@@ -1,7 +1,7 @@
 {
   "name": "@phaserjs/editor-scripts-simple-animations",
   "version": "2.0.0",
-  "description": "Simple animation scripts for Phaser Editor 2D.",
+  "description": "Simple animation scripts for Phaser Editor v4.",
   "main": "out/index.js",
   "repository": {
     "type": "git",
