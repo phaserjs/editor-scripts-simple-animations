@@ -1,5 +1,5 @@
 {
-  "name": "@phasereditor2d/scripts-simple-animations",
+  "name": "@phaserjs/editor-scripts-simple-animations",
   "version": "1.0.12",
   "description": "Simple animation scripts for Phaser Editor 2D.",
   "main": "out/index.js",
@@ -31,7 +31,7 @@
   "author": "Phaser Editor 2D",
   "license": "MIT",
   "devDependencies": {
-    "@phasereditor2d/scripts-core": "^1.1.0",
+    "@phaserjs/editor-scripts-core": "^2.0.0",
     "phaser": "^3.70.0",
     "typescript": "^5.2.2"
   }

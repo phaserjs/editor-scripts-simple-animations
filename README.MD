@@ -1,8 +1,8 @@
-# Phaser Editor 2D Simple Animation Scripts (library)
+# Phaser Editor Simple Animation Scripts (library)
 
-This project contains Phaser Editor 2D scripts for adding simple animations to your game.
+This project contains Phaser Editor scripts for adding simple animations to your game.
 
-These script nodes are very basic and may fit on any Phaser Editor 2D project.
+These script nodes are very basic and may fit on any Phaser Editor project.
 
 The scripts are coded in TypeScript with ES modules.
 
@@ -10,13 +10,13 @@ The scripts are coded in TypeScript with ES modules.
 
 This package depends on the following packages:
 
-- `@phasereditor2d/scripts-core`
+- `@phaserjs/editor-scripts-core`
 
 To install this in your game you have to install dependencies too:
 
 ```
-npm install @phasereditor2d/scripts-core
-npm install @phasereditor2d/scripts-simple-animations
+npm install @phaserjs/editor-scripts-core
+npm install @phaserjs/editor-scripts-simple-animations
 ```
 
 Also, you should add this package to the `phasereditor2d.config.json` file in your project, in the `scripts` section:
@@ -24,15 +24,15 @@ Also, you should add this package to the `phasereditor2d.config.json` file in yo
 ```json
 {
     "scripts": [
-        "@phasereditor2d/scripts-core",
-        "@phasereditor2d/scripts-simple-animations"
+        "@phaserjs/editor-scripts-core",
+        "@phaserjs/editor-scripts-simple-animations"
     ]
 }
 ```
 
 ## Installing (vanilla JavaScript)
 
-* Get the files in the [browser](./browser/) folder and copy them into your JavaScript project. It includes Phaser Editor 2D files, JavaScript files, and TypeScript type definitions.
+* Get the files in the [browser](./browser/) folder and copy them into your JavaScript project. It includes Phaser Editor files, JavaScript files, and TypeScript type definitions.
 * Add a `script` tag to the `index.html` file to load the `lib/phasereditor2d_scripts_core.js` file.
 
 ## Summary

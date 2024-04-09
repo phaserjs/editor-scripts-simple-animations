@@ -1,5 +1,5 @@
 {
     "scripts": [
-        "@phasereditor2d/scripts-core"
+        "@phaserjs/editor-scripts-core"
     ]
 }
