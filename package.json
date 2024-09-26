@@ -1,6 +1,6 @@
 {
   "name": "@phaserjs/editor-scripts-simple-animations",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Simple animation scripts for Phaser Editor v4.",
   "main": "out/index.js",
   "repository": {
